@@ -8,23 +8,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div",{id: "parent"},[
-    React.createElement("div",{id: "child"},[
-        React.createElement("h1",{},"I'm a h1 tag"),
-        React.createElement("h2",{},"I'm a H2 tag"),
-    ]),
-    React.createElement("div",{id: "child"},[
-        React.createElement("h1",{},"I'm a h1 tag"),
-        React.createElement("h2",{},"I'm a H2 tag"),
-    ])
-]);
-// const heading = React.createElement(
-//     "h1",
-//     {id:"heading"},
-//     "Hello World From React!"
-//);
-    console.log(parent); // object
-    const root = ReactDOM.createRoot(document.getElementById("root"));
+// JSX - 'HTML-like'/'XML-like' syntax
+// JSX - transpiled before it reaches the JS - PARCEL - Babel(library)
+// Babel converts the code to React.createElement - now it renders
 
-    root.render(parent); // this will turn the above thing into HTML tag and insert it into HTML code
+const Title = () => (
+  <h1 className="head" tabIndex="5">
+    Namaste React Using JSX🚀
+  </h1>
+);
 
+// React Component
+// Class-Based Component - OLD
+// Functional-Component - NEW
+// Component Composition - composing one React Component into another
+
+// 3 different ways
+const HeadingComponent = () => (
+  <div id="container">
+    {Title()}
+    <Title />
+    <Title></Title>
+    <h1 className="heading">Namaste React Functional Component</h1>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent />);
