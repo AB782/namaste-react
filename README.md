@@ -54,4 +54,5 @@ import {Components} from "path";
 (Normal JS functions ) - written by Facebook developers
 
 - useState() - Superpowerful React Variables
-- useEffect() -
+
+- useEffect() - used when we have to call a function after rendering the file
