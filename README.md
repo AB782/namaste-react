@@ -55,4 +55,32 @@ import {Components} from "path";
 
 - useState() - Superpowerful React Variables
 
+- call on top when function starts
+- used to create Local state variables inside functional components
+- never create inside if-Else conditions
+
+* Always use useState outside the body component
+
+# UseEffect() ----------------------------------------------------------
+
 - useEffect() - used when we have to call a function after rendering the file
+  syntax -
+
+useEffect(() =>{
+console.log("useEffect Called)
+},[])
+
+- uses a dependancy array(optional)
+
+3 Conditions of useEffect()
+
+1. if NO dependancy array - useEffect will be called everytime the component renders
+2. if EMPTY dependancy array - useEffect called once at the beginning
+3. if Dependancy array - it will be called everytime the dependancy updates
+
+# 2 Types of Routing in React Apps -----------------------------------------
+
+- Client Side Routing : like this site we are developing, there are no network calls,
+  everything we need is already loaded into the site
+
+- Server Side Routing : when there's a network call, whenever a new page loads, a network call is made and data is fetched from there
