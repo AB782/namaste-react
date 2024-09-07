@@ -61,7 +61,7 @@ import {Components} from "path";
 
 * Always use useState outside the body component
 
-# UseEffect() ----------------------------------------------------------
+# UseEffect()
 
 - useEffect() - used when we have to call a function after rendering the file
   syntax -
@@ -78,7 +78,7 @@ console.log("useEffect Called)
 2. if EMPTY dependancy array - useEffect called once at the beginning
 3. if Dependancy array - it will be called everytime the dependancy updates
 
-# 2 Types of Routing in React Apps -----------------------------------------
+# 2 Types of Routing in React Apps
 
 - Client Side Routing : like this site we are developing, there are no network calls,
   everything we need is already loaded into the site
