@@ -1,6 +1,15 @@
 #Namaste React
 
-#parcel
+# Basic Rules
+
+- By diving the code into different components, we make the code more
+  - testable
+  - reusable
+  - maintainable
+- This is called Single Responsibility Principle:
+  i.e each page has ONE single responsibilty
+
+# parcel
 
 - Dev build
 - Local Server
@@ -84,3 +93,5 @@ console.log("useEffect Called)
   everything we need is already loaded into the site
 
 - Server Side Routing : when there's a network call, whenever a new page loads, a network call is made and data is fetched from there
+
+# Custon Hooks
